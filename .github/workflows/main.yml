@@ -24,7 +24,7 @@ jobs:
           west build -s ../ -b seeed_xiao_nrf52840 -d build
 
       - name: Upload
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: firmware
           path: ncs/build/zephyr/*.hex
